@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBS Wheels USA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo">BBS</div>
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#products">Collection</a>
+                <a href="#features">Engineering</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="cart-icon" id="cartBtn">
+                🛒 <span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Technology from <span>Motorsport</span></h1>
+            <p>Discover legendary forged and flow-formed wheels designed for track performance and iconic style.</p>
+            <a href="#products" class="btn-primary">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- PRODUCT GRID SECTION -->
+    <section id="products" class="products-section">
+        <div class="section-title">
+            <h2>Featured Wheels</h2>
+            <p>Choose your configuration from our championship-winning lineup.</p>
+        </div>
+        
+        <div class="product-grid" id="productGrid">
+            <div class="product-card">
+                <div class="badge">Forged</div>
+                <div class="product-image bbs-fi-r"></div>
+                <h3>FI-R</h3>
+                <p class="description">Ultra-lightweight forged aluminum wheel designed for hyper-cars and track enthusiasts.</p>
+                <div class="price">$1,450.00 / wheel</div>
+                <button class="btn-secondary add-to-cart" data-name="BBS FI-R" data-price="1450">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">Classic</div>
+                <div class="product-image bbs-lm"></div>
+                <h3>LM</h3>
+                <p class="description">The iconic 2-piece mesh design. A timeless masterpiece born from motorsport heritage.</p>
+                <div class="price">$1,200.00 / wheel</div>
+                <button class="btn-secondary add-to-cart" data-name="BBS LM" data-price="1200">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">Motorsport</div>
+                <div class="product-image bbs-ri-a"></div>
+                <h3>RI-A</h3>
+                <p class="description">Directly derived from Japanese Super GT racing technology for uncompromising rigidity.</p>
+                <div class="price">$980.00 / wheel</div>
+                <button class="btn-secondary add-to-cart" data-name="BBS RI-A" data-price="980">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="features-section">
+        <div class="feature-container">
+            <div class="feature-box">
+                <h3>Motorsport Proven</h3>
+                <p>Decades of dominance on global racing circuits engineered directly into every street application.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Flow-Form & Forged</h3>
+                <p>Advanced manufacturing processes delivering maximum strength with minimal unsprung weight.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Custom Fitments</h3>
+                <p>Precise offset, bolt pattern, and center-bore options tailored specifically for your vehicle.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>BBS Wheels Official</h4>
+                <p>Performance without compromise. Passion driven by engineering excellence.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#products">Wheels</a></li>
+                    <li><a href="#features">Technology</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Get notified about new releases and limited drop specifications.</p>
+                <form id="newsletterForm" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-tertiary">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BBS Wheels Showcase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
