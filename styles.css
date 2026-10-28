@@ -1,0 +1,327 @@
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* HEADER & NAVIGATION */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(13, 13, 13, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #bbb;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e31b23;
+}
+
+.cart-icon {
+    cursor: pointer;
+    background: #1a1a1a;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* HERO SECTION */
+.hero-section {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                radial-gradient(circle, #222 0%, #0d0d0d 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 60px;
+}
+
+.hero-content max-width {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 span {
+    color: #e31b23;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BUTTONS */
+.btn-primary, .btn-secondary, .btn-tertiary {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: #e31b23;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #c21219;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #444;
+    width: 100%;
+}
+
+.btn-secondary:hover {
+    background-color: #e31b23;
+    border-color: #e31b23;
+}
+
+/* PRODUCT GRID */
+.products-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-title p {
+    color: #888;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: #141414;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 25px;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: #444;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #222;
+    color: #e31b23;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+/* ABSTRACT PLACEHOLDER STYLING FOR WHEEL IMAGERY */
+.product-image {
+    width: 100%;
+    height: 220px;
+    background-color: #1f1f1f;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #2a2a2a;
+}
+
+/* SIMULATED WHEEL THUMBNAILS VIA GRADIENTS/PATTERNS */
+.bbs-fi-r { background: radial-gradient(circle, #333 10%, #1a1a1a 70%), repeating-conic-gradient(#222 0 15deg, #111 15deg 30deg); }
+.bbs-lm { background: radial-gradient(circle, #444 20%, #151515 80%), repeating-conic-gradient(#333 0 20deg, #1a1a1a 20deg 40deg); }
+.bbs-ri-a { background: radial-gradient(circle, #3a3a3a 15%, #121212 75%), repeating-conic-gradient(#2a2a2a 0 12deg, #151515 12deg 24deg); }
+
+.product-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.product-card .description {
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    min-height: 45px;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* FEATURES SECTION */
+.features-section {
+    background: #111;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    padding: 60px 20px;
+}
+
+.feature-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.feature-box p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #090909;
+    padding: 60px 20px 20px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-col p, .footer-col ul li a {
+    color: #777;
+    font-size: 0.85rem;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+.footer-col form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.footer-col input {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    outline: none;
+    flex: 1;
+}
+
+.btn-tertiary {
+    background: #e31b23;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 20px;
+    color: #555;
+    font-size: 0.8rem;
+}
